@@ -58,6 +58,10 @@ letter-spacing: 0.5px;
   height: 510px;
 }
 
+.features ul {
+  list-style: none;
+}
+
 .features-heading {
   width: 440px;
   font-size: 72px;
