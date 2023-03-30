@@ -306,7 +306,6 @@ outline-offset: 3px;
 
 .site-footer-links-parent {
   display: flex;
-  justify-content: space-between;
 }
 
 .site-footer-links li a {
