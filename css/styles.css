@@ -6,13 +6,25 @@ body {
 }
 
 .site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: #fff;
+}
+
+/* Sitenav  */
+
+.sitenav-header-actions {
+  display: flex;
+  align-items: center;
+}
+
+.sitenav-lists {
+  list-style: none;
 }
 
 .sitenav-lists {
   display: flex;
-  justify-content: center;
-  list-style: none;
 }
 
 .sitenav-link {
@@ -35,6 +47,9 @@ body {
 .hero {
   background-color: #252420;
   color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .hero-content {
@@ -63,10 +78,6 @@ body {
   height: 510px;
 }
 
-.features ul {
-  list-style: none;
-}
-
 .features-heading {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   width: 440px;
@@ -76,6 +87,8 @@ body {
 
 .list-style-feature {
   display: flex;
+  justify-content: space-between;
+  list-style: none;
 }
 
 .feature {
@@ -98,8 +111,11 @@ body {
 .feature-info {
   font-weight: 400;
 }
-
+/* PROMO AKSIYA  */
 .promo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #252420;
   color: #fff;
 }
@@ -133,9 +149,14 @@ body {
   background-color: #f8f8f8;
 }
 
+.site-footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .list-style-footer {
   display: flex;
-  justify-content: end;
 }
 
 .site-footer ul {
@@ -156,6 +177,7 @@ body {
 
 .site-footer-links-parent {
   display: flex;
+  justify-content: space-between;
 }
 
 .site-footer-links {
