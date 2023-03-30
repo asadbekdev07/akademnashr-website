@@ -1,4 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
+  padding: 0;
+  margin: 0;
   font-style: 16px;
   line-height: 1.5;
   font-family: "Roboto", "Arial", sans-serif;
@@ -6,17 +12,29 @@ body {
 }
 
 :focus {
-outline: 2px dotted #ff7500;
-outline-offset: 3px;
+  outline: 2px dotted #ff7500;
+  outline-offset: 3px;
+}
+/* CONTAINER  */
+.container {
+  width: 100%;
+  max-width: 1140px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .site-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   background-color: #fff;
   border-top: 5px solid #ff7500;
   padding: 16px 0 16px 0;
+}
+
+.site-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo-link {
@@ -80,6 +98,7 @@ outline-offset: 3px;
   font-weight: 700;
   font-size: 13px;
   line-height: 15px;
+  text-decoration: none;
   background-color: #ff7500;
   color: #fff;
   transition: opacity 0.4s ease;
@@ -93,6 +112,9 @@ outline-offset: 3px;
 .hero {
   background-color: #252420;
   color: #fff;
+}
+
+.hero-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -130,6 +152,7 @@ outline-offset: 3px;
   width: 510px;
   height: 510px;
   border-radius: 8px;
+  box-shadow: 24px 24px 0 0 rgba(255, 117, 0, 0.6);
 }
 
 /* FEATURES */
@@ -171,23 +194,33 @@ outline-offset: 3px;
   align-items: center;
   background-color: rgba(255, 117, 0, 0.2);
   border-radius: 50%;
+  margin-bottom: 32px;
 }
 
 .feature-title {
   font-family: "Roboto Condensed", "Arial", sans-serif;
+  margin-top: 0;
+  margin-bottom: 12px;
   font-weight: 700;
   font-size: 24px;
   line-height: 120%;
 }
 
 .feature-info {
+  margin: 0;
   font-weight: 400;
 }
 /* PROMO AKSIYA  */
 .promo {
+  padding-top: 120px;
+  padding-bottom: 160px;
+}
+
+.promo-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 64px;
   border-radius: 12px;
   background-color: #252420;
   color: #fff;
@@ -245,8 +278,8 @@ outline-offset: 3px;
 .site-footer-socials a {
   display: block;
   color: #252420;
- transition: color 0.4 ease;
- opacity: 0.4 ease;
+  transition: color 0.4 ease;
+  opacity: 0.4 ease;
 }
 
 .site-footer-socials svg {
@@ -298,6 +331,13 @@ outline-offset: 3px;
   padding: 0;
   margin: 0;
   margin-right: 68px;
+}
+.site-footer-links li {
+  margin-bottom: 16px;
+}
+
+.site-footer-links li:last-child {
+  margin-bottom: 0;
 }
 
 .site-footer-links:last-child {
