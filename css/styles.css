@@ -203,6 +203,8 @@ body {
 }
 
 .hero-img {
+  position: relative;
+  top: 40px;
   width: 510px;
   height: 510px;
   border-radius: 8px;
@@ -221,7 +223,7 @@ body {
   margin-top: 0;
   margin-bottom: 72px;
   font-size: 72px;
-  line-height: 1.2;
+  line-height: 120%;
 }
 
 .list-style-feature {
@@ -274,7 +276,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 64px;
+  padding-left: 64px;
+  padding-right: 64px;
   border-radius: 12px;
   background-color: var(--text-color);
   color: var(--site-wh-color);
@@ -312,6 +315,8 @@ body {
 }
 
 .promo-img {
+  position: relative;
+  bottom: 64px;
   width: 440px;
   height: 440px;
   object-fit: cover;
